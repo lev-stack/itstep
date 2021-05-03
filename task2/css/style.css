@@ -1,0 +1,19 @@
+h1{
+    font-size: 30px;
+    word-spacing: 40px;
+    letter-spacing: 5px;
+    color: #51755f;
+}
+ins + span{
+    text-decoration: overline;
+}
+.simple{
+    font-weight: 900;
+}
+ins del{
+    text-shadow: 10px 20px 10px orange;
+    font-size: 30px;
+}
+ins.simple del{
+    font-size: 35px;
+}
