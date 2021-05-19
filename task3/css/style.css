@@ -1,0 +1,20 @@
+table{
+border-spacing: 5;
+border-collapse: collapse;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 5px;    
+}
+td{
+    width: 150px;
+    height: 80px;
+    background: rgb(128, 27, 27);
+}
+tr:nth-child(2n+1) td:nth-child(2n+1){
+    background: rgb(136, 54, 54);
+}
+tr:nth-child(2n) td:nth-child(2n){
+    background: rgb(119, 58, 58);
+}
+.vertical-align{
+    top: 1;
+}
