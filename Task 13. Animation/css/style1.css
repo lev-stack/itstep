@@ -1,0 +1,141 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+a{
+    position: fixed;
+    display: block;
+    color: #fff;
+    background: black;
+    padding: 15px 20px;
+    top: 40px;
+}
+.start{
+    left: calc(50% - 150px);
+}
+.end{
+    left: calc(50% + 30px);
+}
+.eye{
+    width: 50px;
+    height: 50px;
+    background: rgb(8, 8, 7);
+    border-radius: 50%;
+    position: relative;
+}
+.cube{
+    width: 400px;
+    height: 400px;
+    background: rgb(247, 30, 255);
+    transition-property: background,width,height,border-radius;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+    box-sizing: border-box;
+    border: 0px solid #456783;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cube:target .cube{
+    width: 100px;
+    height: 100px;
+    background: #bad4e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background: chartreuse;
+    transition-property: background,width,height,border-radius;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+    box-sizing: border-box;
+    border: 0px solid #456783;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box:target{
+    width: 400px;
+    height: 400px;
+    background: rgb(252, 0, 34);
+    border: 0px solid #456783;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 100%;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hotpink;
+    transition-property: background,width,height;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    position: relative;
+}
+.ball:hover{
+    width: 100px;
+    height: 100px;
+    background: indigo;
+}
+.eye{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(228, 0, 114);
+    transition-property: background,width,height;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+.eye:hover{
+    width: 100px;
+    height: 100px;
+    background: rgb(183, 91, 248);
+
+}
+@keyframes run{
+    0%{
+        top:0;
+        left: 0;
+    }
+    25%{
+        top:0;
+        left: 300px;
+    }
+    50%{
+        top:300px;
+        left: 300px;
+    }
+    75%{
+        top:300px;
+        left: 0;
+    }
+    100%{
+        top:0;
+        left: 0;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

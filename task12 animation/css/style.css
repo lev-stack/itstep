@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+a{
+    position: fixed;
+    display: block;
+    color: rgb(53, 53, 41);
+    height: 100%;
+}
+.start{
+    left: calc(50% - 150px);
+}
+.end{
+    left: calc(50% + 30px);
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(9, 206, 255);
+    position: relative;
+    box-sizing: border-box;
+    border: 0px solid rgb(52, 0, 241);
+    transition-property: border,width,height,transform;
+    transition-timing-function: linear;
+    transition-duration: 3s;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.box:target{
+    height: 0px;
+    width: 0px;
+    border: 200px solid crimson;
+    transform: rotate(360deg);
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(9, 206, 255);
+    border-radius: 50%;
+}
+.ball:hover{
+    height: 0px;
+    width: 0px;
+    border: 200px solid crimson;
+    transform: rotate(360deg);
+}

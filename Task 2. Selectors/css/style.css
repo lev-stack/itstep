@@ -1,0 +1,15 @@
+p{
+    font-size: 30px;
+    color: #787878;
+    word-spacing: 40px;
+    letter-spacing: 5px;
+}
+ins + span{
+    text-decoration: overline;
+}
+del ins{
+    text-shadow: 2px 2px 2px orange;
+}
+.square ins{
+    text-shadow: none;
+}
